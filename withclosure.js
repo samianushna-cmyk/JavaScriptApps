@@ -1,0 +1,11 @@
+//with clouser
+const counterResult = (() => {
+  let counter = 0;
+  return function () {
+    counter += 1;
+    return counter;
+  };
+})(); //self-invoking functions
+console.log(counterResult());
+console.log(counterResult());
+console.log(counterResult());

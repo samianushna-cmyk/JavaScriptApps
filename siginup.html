@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="signupvalidate.js"></script>
+  </head>
+  <body>
+        <h1 id="heading">Login</h1>
+
+        <form onsubmit="return Validate()" >
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" />
+          <br /><br />
+
+          <label for="password">Password</label>
+          <input type="password" id="pass" name="password" />
+          <br /><br />
+          <label for="confirmpasssword">COnfirmPassword:</label>
+          <input
+            type="password"
+            id="confs"
+            name="confirmpasssword"
+          /><br /><br />
+          <label for="mobile_no">Mobilenumber</label>
+          <input type="tel" id="mobile" name="mobile_no" /><br /><br />
+          <label for="mail">E-mail:</label>
+          <input type="email" id="email" name="mail" /><br /><br />
+          <label >Select Gender</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br><br>
+          <label for="dob">Enter dob:</label>
+          <input type="date" id="dob" name="dob"><br><br>
+          <label for="adress">Enter Adress:</label>
+          <textarea name="adress" id="adress" rows="5" columns="20"></textarea><br><br>
+          <label for="select">Select Qualification</label>
+          <select name="select" id="select">
+          <option value="">Select</option> <!-- IMPORTANT -->
+          <option value="java">Java</option>
+          <option value="html">HTML5</option>
+        <option value="css">CSS3</option>
+          <option value="js">JavaScript</option>
+        </select><br><br>
+        <label for="Prefered Shift:">Shift:</label>
+        <input type="checkbox" name="shift" value="DayShift"> Day Shift 
+        <input type="checkbox" name="shift" value="NightShift"> Night Shift 
+        <input type="checkbox" name="shift" value="DayNightShift"> Day/Night Shift<br><br>
+        <label for="resume">Upload your resume:</label>
+        <input type="file" id="file"><br><br>
+        <input type="submit" value="Login" />
+        </form>
+      </body>
+    </html>
+  </body>
+</html>
